@@ -1,0 +1,10 @@
+{
+    "package": "mattferris/provider",
+    "description": "Implementation standard for consumer/provider interfaces",
+    "authors": [
+        {
+            "name": "Matt Ferris",
+            "email": "matt@bueller.ca"
+        }
+    ]
+}

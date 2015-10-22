@@ -1,5 +1,5 @@
 {
-    "package": "mattferris/provider",
+    "name": "mattferris/provider",
     "description": "Implementation standard for consumer/provider interfaces",
     "authors": [
         {

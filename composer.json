@@ -1,6 +1,11 @@
 {
     "name": "mattferris/provider",
     "description": "Implementation standard for consumer/provider interfaces",
+    "autoload": {
+        "psr-4": {
+            "MattFerris\\Provider\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Matt Ferris",

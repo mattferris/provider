@@ -5,7 +5,7 @@
  * www.bueller.ca/provider
  *
  * ProviderInterface
- * @copyright Copyright (c) 2015, Matt Ferris
+ * @copyright Copyright (c) 2016, Matt Ferris
  * @author Matt Ferris <matt@bueller.ca>
  *
  * Licensed under BSD 2-clause license
@@ -19,10 +19,11 @@ interface ProviderInterface
     /**
      * Usually called by the consumer's register() method when the provider is
      * passed to it. The provider can then configure the consumer as needed.
+     * $consumer must implement ConsumerInterface or an exception will be thrown.
      *
-     * @param \MattFerris\Provider\ConsumerInterface $consumer The consumer to
-     *     be configured by the provider
+     * @param mixed $consumer The consumer to be configured by the provider
+     * @throws InvalidConsumerException
      */
-    public function provides(ConsumerInterface $consumer);
+    public function provides($consumer);
 }
 
